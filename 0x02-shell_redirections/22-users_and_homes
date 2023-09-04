@@ -1,0 +1,2 @@
+#!/bin/bash
+awk -F: '{if ($3 >= 1000) print $1 ":" $6}' /etc/passwd | sort -t: -k1
